@@ -27,3 +27,23 @@ In conclusion, the data set was analyzed to check whether the data was stationar
 
 # Arima Analysis on Sales Data 2
 
+## Introduction:
+In this report, we analyze the sales data of a company using time series analysis techniques. Our main objective is to build a model that can forecast future sales with a reasonable level of accuracy.
+
+## Check for Stationarity
+We first check if the data is stationary, a necessary condition for ARIMA models. We plot the rolling mean and standard deviation of the sales data over a 12-month period and visually check for stationarity. We then perform the Augmented Dickey-Fuller (ADF) test to confirm the stationarity of the data.
+
+## Determine ARIMA Order
+We use the my_plot function to plot the autocorrelation and partial autocorrelation of the sales data. This helps us determine the order of the ARIMA model. We then fit the ARIMA model with the determined order and get a summary of the model.
+
+## Configuring ARIMA Model
+We check for the significance of the AR and MA coefficients by looking at their p-values. We then rebuild the model without the non-significant MA terms.
+
+## Review Assumptions
+We test if the residuals are white noise by performing the Ljung-Box Q-test. We also check if the residuals are normally distributed using a histogram and a Q-Q plot.
+
+## Fit Analysis
+We compare the AIC and BIC of the models to determine which one has a better fit. We then plot the residuals to check for autocorrelation and partial autocorrelation.
+
+## Conclusion:
+We have successfully built an ARIMA model that can forecast sales data with a reasonable level of accuracy. We have also checked the assumptions of the model and ensured that the residuals are white noise and normally distributed. This model can be used to make predictions about future sales data and help the company make informed decisions.
